@@ -9,7 +9,7 @@ Example script in PowerShell which shows connecting to the VCD API using an API 
 Usage: Adjust variables at the top fo the file as appropriate and commands at end. Will create a persistent PowerCLI session if the `Disconnect-CIServer` part is removed.
 
 ## vcd-token.sh
-Example script in Bash which connects to the VCD API using an API Token and then sets the 'VCD_TOKEN' environment variable to the value of a valid VCD SessionId which can then be consumed in the Terraform VCD Provider rather than storing user credentials in Terraform variables.
+Example script in Bash which connects to the VCD API using an API Token and then sets the `VCD_TOKEN` environment variable to the value of a valid VCD SessionId which can then be consumed in the [Terraform VCD Provider](https://registry.terraform.io/providers/vmware/vcd/latest/docs) rather than storing user credentials in Terraform variables.
 
 >Note: Requires [jq](https://stedolan.github.io/jq/) utility to be installed and accessible to parse returned JSON.
 
