@@ -1,4 +1,3 @@
-
 $org = "<VCD Organization Code>"
 $vcdhost = "<VCD Hostname>"
 $token = "<VCD API Token String>"
