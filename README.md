@@ -31,6 +31,6 @@ Usage: Adjust variables at the top of the file as appropriate and then dot sourc
 
 | Date | Comments |
 |------|----------|
-| 2023-07-08 | Added option for using provider tokens (set 'Org' to 'system') |
-| 2023-07-06 | Update for PowerCLI v13.1 and change to new cloudapi token method, older PowerCLI versions should use vcd-token-legacy.ps1 |
+| 2023-08-08 | Added option for using provider tokens (set 'Org' to 'system') |
+| 2023-08-06 | Update for PowerCLI v13.1 and change to new cloudapi token method, older PowerCLI versions should use vcd-token-legacy.ps1 |
 | 2021-10-22 | Initial release |
