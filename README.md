@@ -26,3 +26,11 @@ Example script in Bash which connects to the VCD API using an API Token and then
 >Note: Script should be saved and made executable (`chmod u+x vcd-token.sh`)
 
 Usage: Adjust variables at the top of the file as appropriate and then dot source (. ./vcd-token.sh) to set environment variable with the session Id.
+
+## History
+
+| Date | Comments |
+|------|----------|
+| 2023-07-08 | Added option for using provider tokens (set 'Org' to 'system') |
+| 2023-07-06 | Update for PowerCLI v13.1 and change to new cloudapi token method, older PowerCLI versions should use vcd-token-legacy.ps1 |
+| 2021-10-22 | Initial release |
