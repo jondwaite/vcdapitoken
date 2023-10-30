@@ -11,7 +11,11 @@ try {
     $uri = "https://$($vcdhost)/oauth/tenant/$($org)/token" 
   }
   $body = "grant_type=refresh_token&refresh_token=$($token)"
-  $access_token = (Invoke-RestMethod -Method Post -Uri $uri -Headers @{'Accept' = 'application/json'} -Body $body -SkipCertificateCheck:$skipsslverify).access_token
+  $headers = @{
+    'Accept' = 'application/json'
+    'ContentType' = 'application/x-www-form-urlencoded'
+  }
+  $access_token = (Invoke-RestMethod -Method Post -Uri $uri -Headers $headers -Body $body -SkipCertificateCheck:$skipsslverify).access_token
   Write-Host -ForegroundColor Green ("Created access_token from token successfully")
 } catch {
   Write-Host -ForegroundColor Red ("Could not create access_token from token, response code: $($_.Exception.Response.StatusCode.value__)")
